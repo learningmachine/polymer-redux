@@ -1,0 +1,38 @@
+.demo-input {
+  font-size: 15px;
+  color: #031532;
+  border-radius: 2px 0 0 2px;
+  padding: 12px 15px;
+  background-color: rgba(243, 244, 245, 6);
+  border: solid 1px rgba(3, 21, 50, .13);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.demo-input.is-invalid {
+  border: 2px solid #f00;
+}
+
+.demo-input::-moz-placeholder {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: rgba(3, 21, 50, .3);
+  letter-spacing: -.25px;
+}
+
+.demo-input::-webkit-input-placeholder {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: rgba(3, 21, 50, .3);
+  letter-spacing: -.25px;
+}
+
+.demo-input:-moz-placeholder {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: rgba(3, 21, 50, .3);
+  letter-spacing: -.25px;
+}
+
+.demo-input:-ms-input-placeholder {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: rgba(3, 21, 50, .3);
+  letter-spacing: -.25px;
+}
