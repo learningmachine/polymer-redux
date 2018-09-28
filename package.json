@@ -23,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/learningmachine/polymer-redux/issues"
   },
-  "homepage": "https://github.com/learningmachine/polymer-redux#readme"
+  "homepage": "https://github.com/learningmachine/polymer-redux#readme",
+  "dependencies": {
+    "@polymer/lit-element": "^0.6.1",
+    "@polymer/polymer": "^3.0.5"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.1.3"
+  }
 }
