@@ -12,8 +12,8 @@ const Input = ({ onInput = () => {}, isValid = true } = {}) => {
       type='text'
       id='demo input'
       placeholder='Some text'
-      class$='${inputClass}'
-      on-input='${(e) => { onInput(e.target.value); }}'
+      class='${inputClass}'
+      @input='${(e) => { onInput(e.target.value); }}'
     />
   `;
 };

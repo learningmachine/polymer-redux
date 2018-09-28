@@ -6,7 +6,7 @@ import '../components/Output';
 import CSS from './_components.app-css';
 
 class App extends LitElement {
-  _render () {
+  render () {
     return html`
       ${CSS}
       <section class="demo-certificate-input">

@@ -19,7 +19,7 @@ export default function connector (component, { mapDispatchToProps = {}, mapStat
       return ownProps;
     }
 
-    _render (_props) {
+    render (_props) {
       const componentProps = {
         ...this.mapDispatchToProps(),
         ...this.mapStateToProps(),
@@ -30,7 +30,7 @@ export default function connector (component, { mapDispatchToProps = {}, mapStat
     }
 
     _stateChanged (state) {
-      this._requestRender();
+      this.requestUpdate();
     }
   };
 }

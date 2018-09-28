@@ -29,7 +29,7 @@ class Button extends LitElement {
   }
 
   handleClick () {
-    this._props.onClick();
+    this.onClick();
     this.showSpinner = true;
     this.activateSpinner = this.showSpinner;
   }
@@ -50,7 +50,7 @@ class Button extends LitElement {
     super._propertiesChanged(props, changedProps, prevProps);
   }
 
-  _render () {
+  render () {
     const buttonClass = [
       'demo-button',
       this.isHollow ? 'demo-button--hollow' : '',
@@ -60,7 +60,7 @@ class Button extends LitElement {
 
     return html`
       ${CSS}
-      <button class$='${buttonClass}' on-click='${this.handleClick}' disabled?='${this.isDisabled}'>
+      <button class='${buttonClass}' @click='${this.handleClick}' ?disabled='${this.isDisabled}'>
        ${this.activateSpinner ? this.getSpinner() : this.getButtonText()}
       </button>
     `;
@@ -74,10 +74,10 @@ window.customElements.define('demo-button-raw', Button);
 function ButtonWrapper (props) {
   return html`
   <demo-button-raw
-    onClick='${props.onClick}'
-    cancelSpinner='${props.cancelSpinner}'
-    isDisabled='${props.isDisabled}'
-    isHollow='${props.isHollow}'
+    .onClick='${props.onClick}'
+    ?cancelSpinner='${props.cancelSpinner}'
+    ?isDisabled='${props.isDisabled}'
+    ?isHollow='${props.isHollow}'
   ></demo-button-raw>`;
 }
 
