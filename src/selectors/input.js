@@ -1,3 +1,3 @@
-export function getInputValue (state) {
-  return state.input.value;
+export function getInputValues (state) {
+  return state.input.savedValues;
 }

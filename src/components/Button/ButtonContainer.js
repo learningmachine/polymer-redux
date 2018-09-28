@@ -1,14 +1,14 @@
 import connector from '../../store/connector';
 import { Button } from './Button';
-// import verifyCertificate from '../../../actions/verifyCertificate';
+import submitValue from '../../actions/submitValue';
 // import { getUrlIsValid } from '../../../selectors/input';
 // import { getCertificateDefinition } from '../../../selectors/certificate';
 // import { getDisableVerify } from '../../../selectors/api';
 // import { getVerificationIsFinished } from '../../../selectors/verification';
 //
-// const mapDispatchToProps = {
-//   onClick: verifyCertificate
-// };
+const mapDispatchToProps = {
+  onClick: submitValue
+};
 //
 // export const mapStateToProps = (state) => ({
 //   cancelSpinner: !getUrlIsValid(state) || getVerificationIsFinished(state),
@@ -20,5 +20,5 @@ import { Button } from './Button';
 // };
 
 // const ButtonContainer = connector(Button, { mapDispatchToProps, mapStateToProps, ownProps });
-const ButtonContainer = connector(Button, {});
+const ButtonContainer = connector(Button, { mapDispatchToProps });
 export default ButtonContainer;

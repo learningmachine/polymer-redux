@@ -1,7 +1,7 @@
 import { html } from '@polymer/lit-element';
 
-export default function Output ({ value }) {
+export default function Output ({ values }) {
   return html`
-    <div>${value}</div>
+    <ul>${ values.map(value => html`<li>${value}</li>`) }</ul>
   `;
 }
