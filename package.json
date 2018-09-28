@@ -1,0 +1,27 @@
+{
+  "name": "polymer-redux",
+  "version": "1.0.0",
+  "description": "Provider of state/view connection for Polymer 3 and Redux projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learningmachine/polymer-redux.git"
+  },
+  "keywords": [
+    "polymer",
+    "webcomponents",
+    "redux",
+    "state",
+    "management",
+    "litelement"
+  ],
+  "author": "Learning Machine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/learningmachine/polymer-redux/issues"
+  },
+  "homepage": "https://github.com/learningmachine/polymer-redux#readme"
+}
