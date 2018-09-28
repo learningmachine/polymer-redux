@@ -1,3 +1,3 @@
 import { InputContainer as Input } from './InputContainer';
 
-window.customElements.define('buv-input', Input);
+window.customElements.define('demo-input', Input);

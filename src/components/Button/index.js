@@ -1,3 +1,3 @@
-import { ButtonContainer as VerifyButton } from './ButtonContainer';
+import { default as Button } from './ButtonContainer';
 
-window.customElements.define('demo-button', VerifyButton);
+window.customElements.define('demo-button', Button);

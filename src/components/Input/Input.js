@@ -7,7 +7,7 @@ const Input = ({ onInput = () => {}, isValid = true } = {}) => {
 
   return html`
     ${CSS}
-    <label for='demo input'>Enter Text</label>
+    <label class="demo-u-visually-hidden" for='demo input'>Enter Text</label>
     <input 
       type='text'
       id='demo input'

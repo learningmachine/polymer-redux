@@ -1,4 +1,4 @@
-import { html, LitElement } from '@polymer/lit-element/lit-element';
+import { html, LitElement } from '@polymer/lit-element';
 import { connect } from 'pwa-helpers/connect-mixin';
 import { bindActionCreators } from 'redux';
 import { configureStore } from './index';
